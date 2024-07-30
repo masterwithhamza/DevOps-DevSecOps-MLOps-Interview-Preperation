@@ -107,25 +107,145 @@ The nice command starts a process with a specified priority,
 and renice changes the priority of an existing process.
 #### Command: nice -n priority command, renice priority PID
 
-###
+### 21. What is a daemon in Linux?
+A daemon is a background process that runs continuously and performs
+specific operations, often started at boot time.
 
-####
-
-
-###
-
-####
+#### Example Daemon: sshd (Secure Shell Daemon)
 
 
-###
+### 22. How do you check open ports on a system?
+The netstat and ss commands display network connections and listening
+ports.
+#### Command: netstat -tuln, ss -tuln
 
-####
+
+### 23. How do you set environment variables?
+Use the export command to set environment variables.
+#### Command: export VAR=value
 
 
-###
+### 24. How do you view environment variables?
+The printenv or env commands display environment variables.
+#### Command: printenv, env
 
-####
+### 25. How do you schedule tasks in Linux?
+Use cron for scheduling recurring tasks and at for one-time tasks.
+#### Command: crontab -e, at time
 
+### 26. What is the difference between cron and anacron?
+cron schedules tasks based on precise times, while anacron is used for
+periodic tasks that are not time-sensitive and can run at any time after a system is
+back online.
+#### Command: crontab -e, anacrontab
+
+### 27. How do you display the last login information?
+The last command displays the last login information for users.
+#### Command: last
+
+### 28. How do you find the location of an executable?
+Use the which command to find the location of an executable in the
+system’s PATH.
+
+#### Command: which executable
+
+### 29. How do you count the number of lines, words, and characters in a file?
+The wc command counts lines, words, and characters in a file.
+#### Command: wc filename
+
+### 30. How do you display the first and last few lines of a file?
+Use the head command to display the first few lines and the tail command
+to display the last few lines of a file.
+#### Command: head filename, tail filename
+
+### 31. How do you create a new user in Linux?
+The useradd command creates a new user.
+#### Command: sudo useradd username
+
+### 32. How do you delete a user in Linux?
+The userdel command deletes a user.
+#### Command: sudo userdel username
+
+### 33. How do you add a user to a group?
+The usermod -aG command adds a user to a group.
+#### Command: sudo usermod -aG groupname username
+
+### 34. How do you switch users in Linux?
+Use the su command to switch users.
+#### Command: su - username
+
+### 35. What is a shell in Linux?
+A shell is a command-line interpreter that provides a user interface for the
+Linux operating system. Examples include bash, sh, zsh, and csh.
+#### Command: echo $SHELL
+
+### 36. How do you check the Linux version?
+The uname -a command displays system information, including the kernel
+version. For distribution-specific information, use lsb_release -a.
+#### Command: uname -a, `lsb_release -a
+
+### 37. What is the /etc/passwd file?
+The /etc/passwd file contains user account information, including
+usernames, encrypted passwords, user IDs (UIDs), group IDs (GIDs), user info, home
+directories, and default shells.
+#### Command: cat /etc/passwd
+
+### 38. What is the /etc/shadow file?
+The /etc/shadow file stores encrypted user password information and
+other password-related settings.
+#### Command: cat /etc/shadow
+
+### 39. How do you change your password in Linux?
+Use the passwd command to change your password.
+#### Command: passwd
+
+### 40. What is the purpose of the /etc/fstab file?
+The /etc/fstab file contains information about disk drives and partitions
+that need to be mounted at boot time.
+#### Command: cat /etc/fstab
+
+### 41. How do you mount a filesystem?
+Use the mount command to mount a filesystem.
+#### Command: mount /dev/device /mnt
+
+### 42. How do you unmount a filesystem?
+Use the umount command to unmount a filesystem.
+#### Command: umount /mnt
+
+### 43. What is swap space?
+Swap space is a portion of a hard disk used as virtual memory to
+supplement physical RAM. It helps in managing memory when the system runs out of
+RAM.
+#### Command: swapon -s
+
+### 44. How do you create a swap file?
+You can create a swap file using the following commands :
+#### Command: dd if=/dev/zero of=/swapfile bs=1M count=1024
+
+### 45. How do you make a swap file permanent?
+Add an entry to the /etc/fstab file
+#### Command: echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+
+### 46. What is the tar command used for?
+The tar command is used to archive files. It can create, extract, and list the
+contents of archives.
+#### Command: tar -cvf archive.tar directory, tar -xvf archive.tar
+
+### 47. How do you search for a pattern in a file?
+The grep command searches for patterns within files.
+#### Command: grep pattern filename
+
+### 48. How do you copy files and directories?
+Use the cp command to copy files and directories.
+#### Command: cp source destination, cp -r source_directory destination_directory
+
+### 49. How do you move or rename files and directories?
+Use the mv command to move or rename files and directories.
+#### Command: mv source destination
+
+### 50. How do you delete files and directories?
+Use the rm command to delete files and directories.
+#### Command: rm filename, rm -r directory
 
 #
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hamzarehman4/)
