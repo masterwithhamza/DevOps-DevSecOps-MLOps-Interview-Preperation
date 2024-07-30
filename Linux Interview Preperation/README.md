@@ -45,8 +45,35 @@ owner:group filename.
 
 #### Command: chown user:group filename
 
+### 8. What is the purpose of the sudo command?
+The sudo command allows a permitted user to execute a command as the
+superuser or another user, as specified by the security policy.
 
+#### Command: sudo command
 
+### 9. How do you view the contents of a file?
+You can use commands like cat, more, less, head, and tail to view file
+contents.
+#### Command: cat filename, less filename, head filename
+
+### 10. How do you search for a file in Linux?
+The find command searches for files in a directory hierarchy
+#### Command: find /path -name filename
+
+### 11. What is the difference between grep and egrep?
+grep searches for patterns in files, while egrep (extended grep) supports
+extended regular expressions.
+#### Command: grep pattern filename, egrep pattern filename
+
+### 12. How do you compress files in Linux?
+Use commands like gzip, bzip2, and zip to compress files.
+#### Command: gzip filename, zip archive.zip filename
+
+### 13. How do you uncompress files in Linux?
+Use commands like gunzip, bunzip2, and unzip to uncompress files.
+#### Command: gunzip filename.gz, unzip archive.zip
+
+### 14. What is a symbolic link?
 
 #
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hamzarehman4/)
