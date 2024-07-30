@@ -1,7 +1,10 @@
 
-# Interview Preperation 
+# Linux Interview Preperation 
 
-This repository is for interview Preperation.
+### 1. What is Linux?
+Answer : Linux is a free, open-source operating system based on Unix. It was created
+by Linus Torvalds in 1991 and is widely used in servers, desktops, and embedded
+systems.
 
 # 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hamzarehman4/)
