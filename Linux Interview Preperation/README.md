@@ -23,6 +23,30 @@ and /tmp (temporary files).
 
 #### Command: ls /
 
+### 4. How do you check the current working directory?
+You can check the current working directory using the pwd (print working
+directory) command.
+#### Command: pwd
+
+### 5. How do you list files in a directory?
+The ls command lists files in a directory. Adding options like -l provides a
+detailed list, and -a includes hidden files.
+
+#### Command: ls -la
+
+### 6. How do you change file permissions?
+The chmod command changes file permissions. Use symbolic (e.g., chmod
+u+x file) or numeric (e.g., chmod 755 file) modes.
+
+#### Command: chmod 755 filename
+
+The chown command changes file ownership. The format is chown
+owner:group filename.
+
+#### Command: chown user:group filename
+
+
+
 
 #
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hamzarehman4/)
