@@ -74,6 +74,58 @@ Use commands like gunzip, bunzip2, and unzip to uncompress files.
 #### Command: gunzip filename.gz, unzip archive.zip
 
 ### 14. What is a symbolic link?
+A symbolic link is a file that points to another file or directory. It’s created
+using the ln -s command.
+#### Command: ln -s target linkname
+
+### 15. How do you display disk usage?
+The df command displays disk space usage, and du shows disk usage of
+files and directories.
+#### Command: df -h, du -sh directory
+
+### 16. How do you check memory usage?
+The free command displays memory usage, and top provides a dynamic
+view of system processes and memory usage.
+#### Command: free -h, top
+
+### 17. What is a process in Linux?
+A process is an instance of a running program. Linux manages processes
+through process IDs (PIDs).
+#### Command: ps, top
+
+### 18. How do you list running processes?
+The ps command lists running processes. Use ps aux for a detailed list.
+#### Command: ps aux
+
+### 19. How do you terminate a process?
+Use the kill command followed by the process ID (PID). kill -9
+PID forcefully terminates a process.
+#### Command: kill PID, kill -9 PID
+
+### 20. How do you change the priority of a process?
+The nice command starts a process with a specified priority,
+and renice changes the priority of an existing process.
+#### Command: nice -n priority command, renice priority PID
+
+###
+
+####
+
+
+###
+
+####
+
+
+###
+
+####
+
+
+###
+
+####
+
 
 #
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hamzarehman4/)
