@@ -334,82 +334,122 @@ Hat-based systems.
 Use the apt-cache depends command in Debian-based systems and yum
 deplist in Red Hat-based systems.
 #### Command: apt-cache depends package_name, yum deplist package_name
-###
 
-####
-###
+### 71. How do you clean up unused packages?
+Use the apt-get autoremove command in Debian-based systems and yum
+autoremove in Red Hat-based systems to remove unused packages and
+dependencies.
+#### Command: sudo apt-get autoremove, sudo yum autoremove
 
-####
-###
+### 72. What is the purpose of the /etc/hosts file?
+The /etc/hosts file maps hostnames to IP addresses locally, allowing for
+hostname resolution without querying DNS servers.
+#### Command: cat /etc/hosts
 
-####
-###
+### 73. Command: cat /etc/hosts?
+Use commands like ifconfig (older systems) or ip (newer systems) to
+configure network interfaces.
+#### Command: ifconfig eth0 192.168.1.100 netmask 255.255.255.0
 
-####
-###
+### 74. How do you check network configuration?
+Use the ifconfig or ip addr command to check network configurations.
+#### Command: ifconfig, ip addr
 
-####
-###
+### 75. How do you check active network connections?
+Use the netstat or ss command to check active network connections.
+#### Command: netstat -tuln, ss -tuln
 
-####
-###
+### 76. How do you restart a network service?
+Use service management commands like systemctl or service to restart
+network services.
+#### Command: sudo systemctl restart network.service, sudo service network restart
 
-####
-###
+### 77. What is the iptables command used for?
+The iptables command is used to set up, maintain, and inspect the tables
+of IP packet filter rules in the Linux kernel.
+#### Command: sudo iptables -L
 
-####
-###
+### 78. How do you enable packet forwarding?
+Modify the /proc/sys/net/ipv4/ip_forward file to enable packet
+forwarding.
+#### Command: echo 1 | sudo tee /proc/sys/net/ipv4/ip_forward
 
-####
-###
+### 79. What is a firewall in Linux?
+A firewall in Linux is a system that controls incoming and outgoing network
+traffic based on predetermined security rules. iptables and firewalld are common
+firewall tools.
+#### Command: sudo iptables -L, sudo firewall-cmd --state
 
-####
-###
+### 80. How do you set up a simple firewall rule to block an IP address?
+Use iptables to add a rule that blocks an IP address.
+#### Command: sudo iptables -A INPUT -s 192.168.1.100 -j DROP
 
-####
-###
+### 81. What is SELinux?
+SELinux (Security-Enhanced Linux) is a Linux kernel security module that
+provides a mechanism for supporting access control security policies.
+#### Command: getenforce (to check the status), setenforce (to change the mode)
 
-####
-###
+### 82. How do you disable SELinux temporarily?
+ Use the setenforce command to change SELinux to permissive mode.
+#### Command: sudo setenforce 0
 
-####
-###
+### 83. What is the purpose of the /etc/resolv.conf file?
+The /etc/resolv.conf file specifies the DNS servers that the system
+should use for hostname resolution.
+#### 84. Command: cat /etc/resolv.conf
 
-####
-###
+### 85. How do you configure DNS settings?
+Edit the /etc/resolv.conf file to configure DNS settings.
+#### Command: sudo nano /etc/resolv.conf and add nameserver entries.
 
-####
-###
+### 86. What is the hostname command used for?
+The hostname command is used to display or set the system's hostname.
+#### Command: hostname, sudo hostname newhostname
 
-####
-###
+### 87. What is the scp command used for?
+The scp (secure copy) command is used to securely copy files between
+hosts over a network.
+#### Command: scp file user@remote_host:/path/to/destination
 
-####
-###
+### 88. How do you create an SSH key pair?
+Use the ssh-keygen command to create an SSH key pair
+#### Command: ssh-keygen -t rsa -b 2048
 
-####
-###
+### 89. How do you add your SSH key to the SSH agent?
+Use the ssh-add command to add your SSH key to the SSH agent.
+#### Command: ssh-add ~/.ssh/id_rsa
 
-####
-###
+### 90. What is the rsync command used for?
+The rsync command is used for fast, flexible, remote (and local) file copying
+and synchronization.
+#### Command: rsync -avz source destination
 
-####
-###
+### 91. How do you check the status of a service?
+Use the systemctl or service command to check the status of a service.
+#### Command: sudo systemctl status servicename, sudo service servicename status
 
-####
+### 92. How do you start and stop services?
+Use the systemctl or service command to start and stop services.
+#### Command: sudo systemctl start servicename, sudo systemctl stop servicename
 
-###
+### 93. What is a runlevel in Linux?
+A runlevel is a mode of operation in Unix and Unix-like operating systems
+that defines what system services are operating.
+#### Command: runlevel
 
-####
-###
+### 94. How do you change the runlevel?
+Use the init or telinit command to change the runlevel.
+#### Command: sudo init 3
 
-####
-###
+### 95. What is the journalctl command used for?
+The journalctl command is used to query and display messages from the
+journal, which is the systemd logging service.
+#### Command: journalctl
 
-####
-###
+### 96. How do you enable and disable services at boot?
+Use the systemctl command to enable or disable services at boot.
+#### Command: sudo systemctl enable servicename, sudo systemctl disable servicename
 
-####
 ###
 
 ####
