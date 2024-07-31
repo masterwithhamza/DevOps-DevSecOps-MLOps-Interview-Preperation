@@ -270,59 +270,70 @@ The sed command is a stream editor used to perform basic text
 transformations on an input stream.
 #### Command: sed 's/old/new/' filename
 
-### 
+### 56. How do you create an alias in Linux?
+Use the alias command to create a shortcut for a command.
+#### Command: alias ll='ls -la'
 
-####
+### 57. How do you remove an alias in Linux?
+Use the unalias command to remove an alias.
+#### Command: unalias alias_name
 
-###
+### 58. How do you create a hard link?
+Use the ln command to create a hard link
+#### Command: ln target linkname
 
-####
+### 59. What is the nohup command used for?
+The nohup command allows a process to continue running in the
+background after the user has logged out.
+#### Command: nohup command &
 
-###
+### 60. How do you display the manual of a command?
+Use the man command to display the manual of a command.
+#### Command: man command
 
-####
+### 61. How do you display the help information of a command?
+Use the --help option with the command to display its help information.
+#### Command: command --help
 
-###
+### 62. What is a package manager?
+A package manager is a tool that automates the process of installing,
+upgrading, configuring, and removing software packages. Examples include apt, yum,
+and dnf.
+#### Command: apt-get install package, yum install package
 
-####
+### 63. How do you update a package list in Debian-based systems?
+Use the apt-get update command to update the package list.
+#### Command: sudo apt-get update
 
-###
+### 64. How do you upgrade all packages in Debian-based systems?
+Use the apt-get upgrade command to upgrade all packages.
+#### Command: sudo apt-get upgrade
 
-####
+### 65. How do you install a package in Debian-based systems?
+Use the apt-get install command to install a package.
+#### Command: sudo apt-get install package_name
 
-###
+### 66. How do you remove a package in Debian-based systems?
+Use the apt-get remove command to remove a package.
+#### Command: sudo apt-get remove package_name
 
-####
+### 67. How do you install a package in Red Hat-based systems?
+Use the yum install or dnf install command to install a package.
+#### Command: sudo yum install package_name, sudo dnf install package_name
 
-###
+### 68. How do you remove a package in Red Hat-based systems?
+Use the yum remove or dnf remove command to remove a package.
+#### Command: sudo yum remove package_name, sudo dnf remove package_name
 
-####
+### 69. How do you list installed packages?
+Use the dpkg -l command in Debian-based systems and rpm -qa in Red
+Hat-based systems.
+#### Command: dpkg -l, rpm -qa
 
-###
-
-####
-
-###
-
-####
-###
-
-####
-###
-
-####
-###
-
-####
-###
-
-####
-###
-
-####
-###
-
-####
+### 70. How do you check the dependencies of a package?
+Use the apt-cache depends command in Debian-based systems and yum
+deplist in Red Hat-based systems.
+#### Command: apt-cache depends package_name, yum deplist package_name
 ###
 
 ####
