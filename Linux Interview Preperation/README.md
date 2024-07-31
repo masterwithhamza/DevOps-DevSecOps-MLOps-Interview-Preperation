@@ -247,6 +247,175 @@ Use the mv command to move or rename files and directories.
 Use the rm command to delete files and directories.
 #### Command: rm filename, rm -r directory
 
+### 51. What is the echo command used for?
+The echo command outputs the given text or variables to the terminal.
+#### Command: echo "Hello, World!"
+
+### 52. How do you display a file's content in reverse order?
+The tac command displays a file's content in reverse order.
+#### Command: tac filename
+
+
+### 53. How do you display a file's content in hexadecimal?
+Use the xxd command to display a file's content in hexadecimal.
+#### Command: xxd filename
+
+### 54. What is the awk command used for?
+The awk command is a powerful text processing utility used for pattern
+scanning and processing.
+#### 55. Command: awk '{print $1}' filename
+
+### 56. What is the sed command used for?
+The sed command is a stream editor used to perform basic text
+transformations on an input stream.
+#### Command: sed 's/old/new/' filename
+
+### 
+
+####
+
+###
+
+####
+
+###
+
+####
+
+###
+
+####
+
+###
+
+####
+
+###
+
+####
+
+###
+
+####
+
+###
+
+####
+
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+###
+
+####
+
+
 #
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hamzarehman4/)
 
