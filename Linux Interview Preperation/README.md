@@ -450,21 +450,28 @@ journal, which is the systemd logging service.
 Use the systemctl command to enable or disable services at boot.
 #### Command: sudo systemctl enable servicename, sudo systemctl disable servicename
 
-###
+### 97. What is two types of Linux User Mode ?
+Command Line
+GUI 
 
-####
-###
+### 98. What is command for created multiple files at a time?
+touch
 
-####
-###
+### 99. What is INODE and How to Identify?
+Its unique identification code for files and directories, its was generate automatically while create new file
+and directories
+ls -i filename
+ls -ldi directoryname
 
-####
-###
+### 100. List of Permissions and Users
+Read, Write and Execute
+Owner, Group Owners and Others
 
-####
-###
+### List of Special Permissions and numerical value.
+Set User ID = 4
+Set Group ID = 2
+Stickybit = 1
 
-####
 
 
 #
