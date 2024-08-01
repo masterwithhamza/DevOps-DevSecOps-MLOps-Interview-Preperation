@@ -636,26 +636,79 @@ ps aux | awk ‘{ print $8 ” ” $2 }’ | grep -w Z
 ###  141. Change User Login Name ?
 usermod -l tecmint_admin tecmint
 
-### 
-###
-###
-###
-###
-###
-###
-###
-###
-###
-###
-###
-###
-###
-###
-###
-###
-###
-###
-###
+### 142. Lock User Account ?
+usermod -L babin
+
+### 143. Unlock User Account
+usermod -U babin
+
+### 144. Change User Shell
+usermod -s /bin/sh babin
+
+### 145. Find Read Only Files?
+find / -perm /u=r
+
+### 146. Find Executable Files?
+find / -perm /a=x
+
+### 147. Find all Empty Files?
+find /tmp -type f -empty
+
+### 148. Find all Empty Directories?
+find /tmp -type d -empty
+
+### 149. Find Last 50 Days Modified Files?
+find / -mtime -50
+
+### 150. Main configuration file of Apache server ?
+/etc/httpd/conf/httpd.conf
+
+### 151. What is telnet and what does it do?
+the telnet command is used to check the connectivity to other servers. It helps you to check whether you
+are able to talk to another server or now. Ex: telnet 192.0.0.1 22 where 22 is the port number.
+
+### 152. What is a bastion host?
+A bastion host is also known as a jump server. It is used to connect from one machine to another machine
+securely. Bastion hosts are used to connecting to private servers securely.
+
+### 153. Name some of the text editors that are available in Linux?
+Some of the common text editors that are available in Linux are vi/vim, nano, subl, gedit, atom, emacs. Vi
+is the default editor that you have in Linux machines.
+
+### 154. What is the command to remove the soft link in Linux?
+To remove the soft link in Linux you can use unlink command. Eg: unlink <filename>
+
+### 155. What is the use of whereis command in linux?
+Whereis command is used to find the binaries and libraries files of an application in linux
+
+### 156. what does “2>” indicate in redirection?
+This means that output will be shown on the screen and the errors will be written to a file that you specify.
+Eg: ls /etc/test 2> error.txt
+
+### 157. What is the purpose of runlevels ?
+Useful for debugging purpose. Basic idea is each runlevel has some services operational and depending
+on need can enable different runlevels to test which services are running.
+
+### 158. You are noticing mails are not sent by sendmail. Where can you find the error log to see what happened ?
+/var/spool/mail/
+
+### 159 .Linux system has crashed and keeps getting to the # Debug Prompt. How do you bring it to normal login prompt?
+Likely due to file system inconsistency, run fsck to check and accept inode repairs
+
+### 160. What is the first process started by the Scheduler ?
+init
+
+### 161. Name 3 Environment variables?
+SHELL,HOME,PATH
+
+### 162. What are Kernel types and which one is Linux ?
+Monolithic and Micro. Linux is a Monolithic Kernel.
+
+### 163. You recently ran an install, the command for which you need to recall. How do you get this?
+history command
+
+
+
 
 
 
