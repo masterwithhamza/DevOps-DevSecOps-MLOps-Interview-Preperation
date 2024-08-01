@@ -549,75 +549,75 @@ yum install packagename -y
 ### 121. What is command package re-install using YUM without ask Prompt?
 yum reinstall packagename -y
 
-### Location of Cron file in linux?
+### 122. Location of Cron file in linux?
 /var/spool/cron
 
-### What is command for to see Particular user Job Schedule ?
+### 123. What is command for to see Particular user Job Schedule ?
 crontab -lu username
 
-### How can I save my input and output commands and see them when required?
+### 124. How can I save my input and output commands and see them when required?
 At the beginning of the session if I will use SCRIPT command then the details of the input and output
 commands will be saved in a file called typescript and we can view it any time using “cat typescript”
 command.
 This is very useful to track what user is doing what. HISTORY command will not work because it shows
 data only for the current session.
 
-### What is the difference between TOP and PS command?
+### 125. What is the difference between TOP and PS command?
 Top command gives the dynamic view of the processes are running in the server and generally the
 dynamic change happens in every 3 second. Whereas PS commands gives the static view of the
 processes.
 
-### What is the difference between creating a file in cat and in touch command?
+### 126. What is the difference between creating a file in cat and in touch command?
 cat command creates a file and we can save some data inside the file but touch command by default will
 create a blank file.
 
-### How can I create multiple directories at a time? Say I want to create a directory D1 and inside that D2 and inside that D3. Is it possible? If yes how ?
+### 127. How can I create multiple directories at a time? Say I want to create a directory D1 and inside that D2 and inside that D3. Is it possible? If yes how ?
 Yes creating multiple directories is possible. In this scenario the below command works.
 Mkdir –p D1/D2/D3
 
-### I want to create D1, under that D2 and D3. Inside D2 I want D4 and inside D3 I want D5 to be created. How is it possible?
+### 128. I want to create D1, under that D2 and D3. Inside D2 I want D4 and inside D3 I want D5 to be created. How is it possible?
 The below command will work for it.
 mkdir –p D1/D2/D4 D1/D3/D5
 
-### In real time environment many people use “ll” command instead of ls. So is there any command called “ll” exits?
+### 129. In real time environment many people use “ll” command instead of ls. So is there any command called “ll” exits?
 No there is no such command called “ll”. It’s just the alias of ls command. We can check it by typing alias
 command.
 
-### What is absolute path and relative path in unix ?
+### 130. What is absolute path and relative path in unix ?
 Absolute path refers to the path starting from the root directory and the path continues with a sequence
 starting from Root. Whereas relative path is the current path.
 
-### How can I check if a server is up and running or not ?
+### 131. How can I check if a server is up and running or not ?
 you can use ping –t command for this.
 Ping –t <hostname> or <IP address>
 
-### How many numbers are used with kill while killing a process ?
+### 132. How many numbers are used with kill while killing a process ?
 there are 64 numbers which can be used with kill command but generaly we use kill -9
 
-### What is pipe command ? why it is used for ?
+### 133. What is pipe command ? why it is used for ?
 Pipe symbol interlinks two commands. It stores the output of the first command and give it to the second
 command as input.
 Cat emp.lst | mantu.txt
 
-### How can I delete one line in Vi editor ?
+### 134. How can I delete one line in Vi editor ?
 Use dd in command mode to delete one line of a file in vi.
 
-### Explain the advantages of executing a process in background ?
+### 135. Explain the advantages of executing a process in background ?
 We use “&” symbol to execute a job in back ground. When we execute a job or process in unix it starts
 executing in the prompt itself and we can’t do other stuffs in the command prompt at that time. So until
 unless the process gets executed we have to seat idle. So for continuous interaction with the command
 prompt we prefer executing the jobs or processes in back ground.
 
-### How will you suspend a running process and put it in the background?
+### 136. How will you suspend a running process and put it in the background?
 Ctrl+z
 
-###  Name the Daemon responsible for tracking System Event on your Linux box?
+### 137. Name the Daemon responsible for tracking System Event on your Linux box?
 Syslogd
 
-### To see tar file without extracting?
+### 138. To see tar file without extracting?
 tar -tvf
 
-### Explained BOOT LOADER?
+### 139. Explained BOOT LOADER?
 The boot loader is then responsible for loading the kernel
 A boot loader finds the kernel image on the disk, loads it into memory, starts it.
 Stage 1 boot loader
@@ -630,10 +630,10 @@ The second-stage, boot loader called the kernel loader.
 The first- and second-stage boot loaders combined are calledGRand Unified Bootloader.
 With stage 2 loaded, GRUB can display a list of available kernels You can select a kernel parameters.
 
-### So how do I find out zombie process?
+### 140. So how do I find out zombie process?
 ps aux | awk ‘{ print $8 ” ” $2 }’ | grep -w Z
 
-###  Change User Login Name ?
+###  141. Change User Login Name ?
 usermod -l tecmint_admin tecmint
 
 ### 
